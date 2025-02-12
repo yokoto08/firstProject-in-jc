@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+        <div class="card-form">
+            <h1 class="titleForm">хотите создать карточку ?</h1>
+        <label for="title card">your title card</label>
+        <input class="titleCard-form" type="text" id="title card" placeholder="название карты" required  > 
+
+        <label for="text card">your text</label>
+        <input class="textCard-form" type="text" id="text card" placeholder="описание карты" required > 
+
+        <label for="img">link</label>
+        <input class="linkCard-form" type="text" id="img" placeholder="сыллка на картинку" required >
+
+        <div class="buttons">
+        <button class="createButton" type="button">добавить</button>
+        <button class="deletAllcards" type="button">удалить все карты</button>
+        </div>
+         </div>
+    </main>
+    <footer></footer>
+    <template id="templete">
+        <div class="card">
+            <div class="card-item">
+                <img class="img" src="" alt="">
+                <h1 class="title"></h1>
+                <p class="text"></p>
+                <button type="button"></button>
+                <button type="button"></button>
+            </div>
+        </div>
+    </template>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
