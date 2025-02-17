@@ -5,21 +5,37 @@ const textCardform  = main.querySelector('.textCard-form')
 const linkCardform = main.querySelector('.linkCard-form')
 const templete = document.getElementById('templete').content
 const createElement = main.querySelector('.createButton')
-const cardArea = main.querySelector('.cards')
+const cardArea = main.querySelector('.card_area')
 
 function createCard() {
+
     const cloneCard = templete.cloneNode(true)
     cloneCard.querySelector('img').src = linkCardform.value
     cloneCard.querySelector('.title').textContent =  titleCardform.value
     cloneCard.querySelector('.text').textContent = textCardform.value
 
-     main.appendChild(cloneCard)
+    const buttonLike = cloneCard.querySelector('.like_button')
+    buttonLike.addEventListener('click', function() {
+        buttonLike.classList.toggle('like')
+    })
+
+    cloneCard.querySelector('.delete_but').addEventListener('click', function () {
+        this.closest('.card').remove()
+      })
+      
+     cardArea.appendChild(cloneCard)
      titleCardform.value = ''
      textCardform.value = ''
      linkCardform.value = ''
 }
+
 createElement.addEventListener ('click',createCard)
 
+const removeButton = main.querySelector('.deletAllcards')
+removeButton.addEventListener('click', function(){
+    cardArea.textContent = ""
+    cardsData = []
+})
 
 const cardsData = [
     {
@@ -54,9 +70,17 @@ const cardsData = [
         cloneCard.querySelector('.text').textContent = obj.p
         cloneCard.querySelector('img').src = obj.img
         
-        main.appendChild(cloneCard)
-    });
+        const buttonLike = cloneCard.querySelector('.like_button')
+buttonLike.addEventListener('click', function() {
+    buttonLike.classList.toggle('like')
+})
 
+cloneCard.querySelector('.delete_but').addEventListener('click', function () {
+    this.closest('.card').remove()
+  })
+
+        cardArea.appendChild(cloneCard)
+    });
     
 
 

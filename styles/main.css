@@ -6,6 +6,7 @@
     text-align: center;
     background-color: white;
     padding: 10px;
+    border-radius: 30px ;
 }
 img {
     width: 150px ;
@@ -23,10 +24,7 @@ p {
     font-size: 18px;
 }
 
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+
 
 body{
     background-image: url(/images/istockphoto-1206504617-612x612.jpg);
@@ -34,7 +32,7 @@ body{
     overflow: hidden;
     overflow-y: auto;
  }
-.grid{
+.card_area{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -55,4 +53,22 @@ body{
 
 button{
     margin: 5px;
+}
+.like_button{
+    background-image: url(/images/like.jpg) ;
+    width: 50px; ;
+    height: 50px ;
+    border: none;
+}
+.like{
+    background-image: url(/images/Untitled.png) ;
+    width: 50px; ;
+    height: 50px ;
+    border: none;
+}
+.delete_but{
+    background-image: url(/images/19c.jpg) ;
+    width: 50px; ;
+    height: 50px ;
+    border: none;
 }
