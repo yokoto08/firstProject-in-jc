@@ -27,7 +27,7 @@ p {
 
 
 body{
-    background-image: url(/images/istockphoto-1206504617-612x612.jpg);
+    background-image: url(./images/istockphoto-1206504617-612x612.jpg);
     color: white;
     overflow: hidden;
     overflow-y: auto;
@@ -55,19 +55,19 @@ button{
     margin: 5px;
 }
 .like_button{
-    background-image: url(/images/like.jpg) ;
+    background-image: url(./images/like.jpg) ;
     width: 50px; ;
     height: 50px ;
     border: none;
 }
 .like{
-    background-image: url(/images/Untitled.png) ;
+    background-image: url(./images/Untitled.png) ;
     width: 50px; ;
     height: 50px ;
     border: none;
 }
 .delete_but{
-    background-image: url(/images/19c.jpg) ;
+    background-image: url(./images/19c.jpg) ;
     width: 50px; ;
     height: 50px ;
     border: none;
