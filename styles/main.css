@@ -55,13 +55,13 @@ button{
     margin: 5px;
 }
 .like_button{
-    background-image: url(./images/like.jpg) ;
+    background-image: url(/images/like.jpg);
     width: 50px; ;
     height: 50px ;
     border: none;
 }
 .like{
-    background-image: url(./images/Untitled.png) ;
+    background-image: url(/images/Untitled.png) ;
     width: 50px; ;
     height: 50px ;
     border: none;
